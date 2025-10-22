@@ -148,7 +148,7 @@
     // Swiper init
     // ---------------------------
     const swiper = new Swiper('.entert__body--slider', {
-      slidesPerView: '3.7',
+      slidesPerView: 'auto',
       spaceBetween: 15,
       centeredSlides: false,
       centeredSlidesBounds: true,
@@ -179,6 +179,13 @@
       pagination: {
         el: '.swiper-pagination',
         clickable: true
+      },
+
+      breakpoints: {
+        768: {
+          slidesPerView: '3.7',
+          spaceBetween: 15,
+        },
       },
 
       on: {
